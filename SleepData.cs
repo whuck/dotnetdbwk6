@@ -15,7 +15,10 @@ namespace DotNetDbWk6
             this.logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
             foreach(string week in lines)
             {
-                this.AddWeek(week);
+                if (!week.Equals("")) 
+                {
+                    this.AddWeek(week);
+                }                
             }
             //this.weeks = new ArrayList();
             this.logger.Debug("Creating SleepData Object");

@@ -11,6 +11,9 @@ namespace DotNetDbWk6
             string path = Directory.GetCurrentDirectory() + "\\nlog.config";
             var logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
             //instantiate FileParser obj
+            FileMaker fm = new FileMaker("data.txt");
+            fm.MakeFile(10);
+
             FileParser fp = new FileParser("data.txt");
             ArrayList lines = fp.ParseFile();
             //test run of week creation
