@@ -8,11 +8,16 @@ namespace DotNetDbWk6
     {
         private ArrayList weeks {get; set;}
         private NLog.Logger logger;
-        public SleepData()
+        public SleepData(ArrayList lines)
         {
+            this.weeks = new ArrayList();
             string path = Directory.GetCurrentDirectory() + "\\nlog.config";
             this.logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
-            this.weeks = new ArrayList();
+            foreach(string week in lines)
+            {
+                this.AddWeek(week);
+            }
+            //this.weeks = new ArrayList();
             this.logger.Debug("Creating SleepData Object");
         }
         

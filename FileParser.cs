@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using NLog.Web;
+using System.Collections;
 namespace DotNetDbWk6
 {
     class FileParser
@@ -15,14 +16,21 @@ namespace DotNetDbWk6
             this.fileName = fileName;
             
         }
-        public void ParseFile()
+        public ArrayList ParseFile()
         {
+            ArrayList lines = new ArrayList();
             try 
-            {
+            {                
                 sr = new StreamReader(this.fileName);
+                while(!sr.EndOfStream)
+                {
+                    lines.Add(sr.ReadLine());
+                }
+                sr.Close();                
             } catch {
-                logger.Debug($"StreamReader({fileName}) died!");
+                logger.Debug($"StreamReader({fileName}) died!");                
             }
+            return lines;
         }
     }
 }
