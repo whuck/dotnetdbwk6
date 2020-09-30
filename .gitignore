@@ -1,0 +1,13 @@
+DotNetDbWk6.csproj
+.vscode/launch.json
+.vscode/tasks.json
+obj/DotNetDbWk6.csproj.nuget.dgspec.json
+obj/DotNetDbWk6.csproj.nuget.g.props
+obj/DotNetDbWk6.csproj.nuget.g.targets
+obj/project.assets.json
+obj/project.nuget.cache
+obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+obj/Debug/netcoreapp3.1/DotNetDbWk6.AssemblyInfo.cs
+obj/Debug/netcoreapp3.1/DotNetDbWk6.AssemblyInfoInputs.cache
+obj/Debug/netcoreapp3.1/DotNetDbWk6.assets.cache
+obj/Debug/netcoreapp3.1/DotNetDbWk6.csprojAssemblyReference.cache
