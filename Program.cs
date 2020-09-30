@@ -12,6 +12,12 @@ namespace DotNetDbWk6
             var logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
             //instantiate FileParser obj
             FileParser fp = new FileParser("data.txt");
+
+            //test run of week creation
+            string w = "8/30/2020,7|4|10|12|6|10|10";
+            SleepData sd = new SleepData();
+            sd.AddWeek(w);
+
         }
     }
 }

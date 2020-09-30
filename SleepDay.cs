@@ -1,11 +1,16 @@
 using System;
-using System.IO;
 using NLog.Web;
 
 namespace DotNetDbWk6
 {
     class SleepDay
     {
-        //just needs hours slept
+        private int hoursSlept {get; set;}
+        private DateTime sleepDayDate {get; set;}
+        public SleepDay(int h, DateTime d)
+        {
+            this.hoursSlept = h;
+            this.sleepDayDate = d;
+        }
     }
 }
