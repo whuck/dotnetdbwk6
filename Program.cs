@@ -10,20 +10,12 @@ namespace DotNetDbWk6
         {   //fire up logger
             string path = Directory.GetCurrentDirectory() + "\\nlog.config";
             var logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
-            //instantiate FileParser obj
-            FileMaker fm = new FileMaker("data.txt");
-            //fm.MakeFile(10);
-
-            FileParser fp = new FileParser("data.txt");
-            //ArrayList lines = fp.ParseFile();
-
-            //SleepData sd = new SleepData(lines);
-
-            //Console.WriteLine(sd.ToString());
-
-
             
-
+            //instantiate FileParser & FileMaker objs
+            FileMaker fm = new FileMaker("data.txt");
+            FileParser fp = new FileParser("data.txt");
+            
+            //menu loop
             string resp = "";
             do {
                 Console.WriteLine("Enter 1 to create data file.");
@@ -43,6 +35,7 @@ namespace DotNetDbWk6
                     break;
                     
                     case "2" : 
+                    //parse data file then display data
                     SleepData sd = new SleepData(fp.ParseFile());
                     Console.WriteLine(sd.ToString());
                     break;

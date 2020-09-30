@@ -18,6 +18,7 @@ namespace DotNetDbWk6
         }
         public ArrayList ParseFile()
         {
+            logger.Debug("parsing file");
             ArrayList lines = new ArrayList();
             try 
             {                

@@ -43,6 +43,7 @@ namespace DotNetDbWk6
                     // M/d/yyyy,#|#|#|#|#|#|#
                     //Console.WriteLine($"{dataDate:M/d/yy},{string.Join("|", hours)}");
                     sw.WriteLine($"{dataDate:M/d/yyyy},{string.Join("|", hours)}");
+                    logger.Debug($"writing line to file{dataDate:M/d/yyyy},{string.Join("|", hours)}");
                     // add 1 week to date
                     dataDate = dataDate.AddDays(7);
                 }
