@@ -28,25 +28,8 @@ namespace DotNetDbWk6
             DateTime startDate = DateTime.Parse(lineItems[0]);
             //cast week hours string in an array
             string weekHrs = lineItems[1];
+            //creat week obj and toss into weeks array
             SleepWeek week = new SleepWeek(startDate, weekHrs);
-            //grab hours and toss in an array
-            //string[] lineHours = lineItems[1].Split('|');
-            
-            // //iterate through array of string ints and create SleepDay objs for the week
-            // int totalHrs = 0;
-            // double avgHrs = 0;
-
-            // ArrayList week = new ArrayList();
-            // for(int i = 0; i < lineHours.Length; i++)
-            //     {
-            //         int dayHours = short.Parse(lineHours[i]);
-            //         DateTime dayDate = lineDate.AddDays(i);
-            //         SleepDay day = new SleepDay(dayHours,dayDate);
-            //         totalHrs+=short.Parse(lineHours[i]);
-            //         week.Add(day);
-            //     }
-            // avgHrs = totalHrs / 7;
-            // string avg = $"{avgHrs:0.0}";
             this.weeks.Add(week);
         }
         public override string ToString()
@@ -54,7 +37,7 @@ namespace DotNetDbWk6
             string outty = "";
             for(int i =0; i < this.weeks.Count; i++)
             {
-                outty += this.weeks[i].ToString();
+                outty += this.weeks[i].ToString() + System.Environment.NewLine;
             }
             return outty;
         }

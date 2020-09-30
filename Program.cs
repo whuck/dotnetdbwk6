@@ -15,8 +15,10 @@ namespace DotNetDbWk6
 
             //test run of week creation
             string w = "8/30/2020,7|4|10|12|6|10|10";
+            string w2 = "9/30/2020,3|2|10|12|6|11|11";
             SleepData sd = new SleepData();
             sd.AddWeek(w);
+            sd.AddWeek(w2);
             Console.WriteLine(sd.ToString());
 
         }

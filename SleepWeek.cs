@@ -17,7 +17,7 @@ namespace DotNetDbWk6
             string path = Directory.GetCurrentDirectory() + "\\nlog.config";
             this.logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
             this.logger.Debug($"Creating SleepWeek({startDate.ToString()},{hours})");
-            //this.days = new ArrayList(days);
+
             this.startDate = startDate;
             this.endDate = startDate.AddDays(7);
             ArrayList week = new ArrayList();
@@ -33,9 +33,8 @@ namespace DotNetDbWk6
                     this.totalHrs += dayHours;
                     //make individual day's date by adding loop index to startdate
                     DateTime dayDate = startDate.AddDays(i);
-                    
+                    //create day obj and toss into week array
                     SleepDay day = new SleepDay(dayHours,dayDate);
-                    //hours+=short.Parse(hours[i]);
                     week.Add(day);
                 }  
             this.avgHrs = this.totalHrs / 7;
