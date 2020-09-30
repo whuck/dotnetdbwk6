@@ -11,3 +11,23 @@ obj/Debug/netcoreapp3.1/DotNetDbWk6.AssemblyInfo.cs
 obj/Debug/netcoreapp3.1/DotNetDbWk6.AssemblyInfoInputs.cache
 obj/Debug/netcoreapp3.1/DotNetDbWk6.assets.cache
 obj/Debug/netcoreapp3.1/DotNetDbWk6.csprojAssemblyReference.cache
+data.txt
+Program - Copy.cs
+ProgramOld.cs
+bin/Debug/netcoreapp3.1/DotNetDbWk6.deps.json
+bin/Debug/netcoreapp3.1/DotNetDbWk6.dll
+bin/Debug/netcoreapp3.1/DotNetDbWk6.exe
+bin/Debug/netcoreapp3.1/DotNetDbWk6.pdb
+bin/Debug/netcoreapp3.1/DotNetDbWk6.runtimeconfig.dev.json
+bin/Debug/netcoreapp3.1/DotNetDbWk6.runtimeconfig.json
+bin/Debug/netcoreapp3.1/NLog.dll
+bin/Debug/netcoreapp3.1/NLog.Extensions.Logging.dll
+bin/Debug/netcoreapp3.1/NLog.Web.AspNetCore.dll
+obj/Debug/netcoreapp3.1/DotNetDbWk6.csproj.CopyComplete
+obj/Debug/netcoreapp3.1/DotNetDbWk6.csproj.CoreCompileInputs.cache
+obj/Debug/netcoreapp3.1/DotNetDbWk6.csproj.FileListAbsolute.txt
+obj/Debug/netcoreapp3.1/DotNetDbWk6.dll
+obj/Debug/netcoreapp3.1/DotNetDbWk6.exe
+obj/Debug/netcoreapp3.1/DotNetDbWk6.genruntimeconfig.cache
+obj/Debug/netcoreapp3.1/DotNetDbWk6.pdb
+Program - Copy.old
